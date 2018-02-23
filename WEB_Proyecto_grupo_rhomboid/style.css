@@ -1,0 +1,579 @@
+*{
+	margin: 0;
+}
+
+html,body {
+	width: 100%;
+}
+
+body {
+    background: #1b1b27;
+    overflow-x: hidden;
+    height: 100%;
+    color: white;
+}
+
+#intro {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1b1b27;
+}
+
+.c-parallax {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-perspective-origin-x: 100%;
+  overflow-x: hidden;
+
+  -webkit-perspective: 2px;
+  perspective: 2px;
+}
+
+#fixParallax {
+    overflow-y: auto;
+}
+
+.c-parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transform-origin-x: 100%;
+}
+
+.c-parallax__layer--0 {
+  background-image: url("Media/parallax/parallax0.png");
+  margin-top: 0%;
+  transform: translateZ(-35px) scale(19);
+}
+
+.c-parallax__layer--1 {
+  background-image: url("Media/parallax/parallax1.png");
+  margin-top: 12.5%;
+  transform: translateZ(-31px) scale(17);
+}
+
+.c-parallax__layer--2 {
+  background-image: url("Media/parallax/parallax2.png");
+  margin-top: 25%;
+  transform: translateZ(-27px) scale(15);
+}
+
+.c-parallax__layer--3 {
+  background-image: url("Media/parallax/parallax3.png");
+  margin-top: 37.5%;
+  transform: translateZ(-23px) scale(13);
+}
+
+.c-parallax__layer--4 {
+  background-image: url("Media/parallax/parallax4.png");
+  margin-top: 50%;
+  transform: translateZ(-19px) scale(11);
+}
+
+.c-parallax__layer--5 {
+  background-image: url("Media/parallax/parallax5.png");
+  margin-top: 62.5%;
+  transform: translateZ(-15px) scale(9);
+}
+
+.c-parallax__layer--6 {
+  background-image: url("Media/parallax/parallax6a.png");
+  margin-top: 75%;
+  transform: translateZ(-11px) scale(7);
+}
+
+.c-parallax__layer--7 {
+  background-image: url("Media/parallax/parallax7a.png");
+  margin-top: 87.5%;
+  transform: translateZ(-7px) scale(5);
+}
+
+.c-parallax__layer--8 {
+  background-image: url("Media/parallax/parallax8a.png");
+  margin-top: 100%;
+  transform: translateZ(-3px) scale(3);
+}
+
+.c-parallax__layer:last-child::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #1b1b27;
+  transform: translateY(100%);
+  z-index: -1;
+}
+
+.navHidden {
+  top: 0;
+  opacity: 0;
+  transition: 1.2s;
+  WebkitTransition: 1.2s;
+}
+
+.navDisplay {
+  top: 4vh;
+  transition: 1.2s;
+  opacity: 1;
+  WebkitTransition: 1.2s;
+}
+
+.navHidden .logo {
+  width: 8vh;
+  margin-left: 0;
+  transform: translateY(-10vh);
+  transition: 1.2s;
+  WebkitTransition: 1.2s;
+}
+
+.navDisplay .logo {
+  width: 8vh;
+  margin-left: 5%;
+  transform: translateY(-4vh);
+  transition: 1.2s;
+  WebkitTransition: 1.2s;
+}
+
+.navHidden ul {
+  padding-right: 6em;
+	color: #ffe472;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+	font-size: 1.2em;
+	padding: 0;
+  transition: 1.2s;
+  WebkitTransition: 1.2s;
+}
+
+.navDisplay ul {
+  padding-right: 6em;
+  color: #ffe472;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  font-size: 1.2em;
+  padding: 0;
+  padding: 1%!important;
+  margin-right: 13%!important;
+  transition: 1.2s;
+  WebkitTransition: 1.2s;
+}
+
+.navDisplay a {
+  text-decoration: none;
+  color: #ffe472;
+}
+
+
+#menu {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  height: 15%;
+  z-index: 99;
+}
+
+#menu ul li:nth-child(-n+3) {
+    margin-right: 2em;
+}
+
+#innovation {
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    width: 22%;
+    top: 50%;
+    margin-left: 20%;
+}
+#innovation h3{
+  color: #ffe472;
+  font-size: 3em;
+}
+
+#weAre {
+  position: relative;
+  background: #1b1b27;
+  justify-content: center;
+  text-align: center;
+  margin-top: 15vh;
+  width: inherit;
+  height: inherit;
+}
+
+#weAre h1{
+  margin: auto;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 5em;
+  margin-bottom: 4%;
+  color: #d46d1e;
+}
+
+
+#news {
+  position: relative;
+  height: inherit;
+  width: inherit;
+}
+
+#footerOfSection {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  bottom: -2px;
+  left: 0;
+  width: inherit;
+  min-height: inherit;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  z-index: 20;
+}
+
+
+
+.firstIndex{
+  background-image: url(./media/backgrounds/floor01.png);
+}
+
+#topOfSection {
+  position: absolute;
+  top: -2px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: -3px;
+  width: inherit;
+    height: 45vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: 20;
+}
+
+.secondIndex{
+  background-image: url(./media/backgrounds/floor02.png);
+}
+
+footer {
+  height: 11vh;
+}
+
+footer p {
+  width: 20%;
+  margin: auto;
+  margin-top: 2vh;
+  font-size: 0.75em;
+}
+
+footer .logo {
+    width: 3vw;
+    transform: translateX(-1.5vw);
+}
+
+footer .logoContainer{
+    display: flex;
+    justify-content: center;
+    height: inherit;
+}
+
+footer .footerNavigation {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.footerNavigation ul {
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 1em;
+    padding: 0;
+    width: 20vw;
+    margin-left: -3vw;
+}
+
+.footerNavigation li {
+  margin-left: 1%;
+}
+
+
+.footerNavigation a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* end of index style */
+
+
+.about {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 15%
+}
+
+.articleAbout {
+  width: 45vw;
+  height: 35vh;
+  margin: auto;
+  margin-top: 1%;
+  position: relative;
+}
+
+.articleAbout h1 {
+  font-size: 3em;
+  margin-left: 10vw;
+  width: 100%;
+}
+
+
+.right .descriptionAbout{
+  text-align: left;
+  width: 74%;
+  height: 100%;
+  transform: translate(1vw, 4.5vh);
+}
+
+.left .descriptionAbout {
+  text-align: right;
+  width: 74%;
+  height: 100%;
+  transform: translate(3vw, 4.5vh);
+}
+
+.descriptionAbout p {
+  margin: 4em;
+  margin-top: 1em;
+}
+
+.right .imageAbout {
+  background: url(Media/characters/character02.png) center center no-repeat;
+  background-size: contain;
+  width: inherit;
+  height: 55vh;
+  position: absolute;
+  top: -30%;
+  right: -21%;
+}
+
+.left .imageAbout {
+  background: url(Media/characters/character03.png) center center no-repeat;
+  background-size: contain;
+  width: inherit;
+  height: 76vh;
+  position: absolute;
+    top: -44%;
+    right: 48%;
+}
+
+.last{
+    background: url(Media/characters/character04.png) center center no-repeat!important;
+    background-size: contain!important;
+    width: inherit!important;
+    height: 63vh!important;
+    position: absolute!important;
+    top: -36%!important;
+    right: 55%!important;
+}
+
+.backgroundArticle {
+  background: url(Media/backgrounds/gris.jpg) center center no-repeat;
+  width: 40vw;
+  height: 20vh;
+  position: relative;
+}
+
+.backgroundAbout{
+  background: url(http://coolvibe.com/wp-content/uploads/2012/07/Illustration-Yang-Bo-Green-Shadow-Town.jpg) center center no-repeat;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 65vh;
+  background-size: cover;
+  text-align: center;
+}
+
+.divisor {
+  margin-top: 70vh;
+}
+
+.right {
+  margin-right: 5vw;
+}
+
+.left {
+  margin-left: 15vw;
+}
+
+.backgroundAbout h1{
+  transform: translateY(34vh);
+  font-size: 4em;
+  color: #e85f06;
+}
+
+.team {
+    text-align: center;
+    background-color: #e7e6e3;
+    color: #2b2a29;
+    padding: 2%;
+    height: 43vh;
+}
+
+.team h1 {
+   font-size: 3em;
+}
+
+.flexTeam {
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+.person {
+    width: 10vw;
+    height: 19vh;
+}
+
+.imagePerson {
+    height: 100%;
+    width: 100%;
+    background-size: contain!important;
+}
+
+.first {
+    background: url(Media/characters/person.png) center center no-repeat;
+}
+
+.second {
+    background: url(Media/characters/person.png) center center no-repeat;
+}
+
+.third {
+    background: url(Media/characters/person.png) center center no-repeat;
+}
+
+.fourth {
+    background: url(Media/characters/person.png) center center no-repeat;
+}
+
+.imagePersonGame1 {
+    background: url(Media/games/firewatch.jpg) center center no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+}
+
+.imagePersonGame2 {
+    background: url(Media/games/hollowknight.jpg) center center no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+}
+
+.imagePersonGame3 {
+    background: url(Media/games/valley_of_gods.jpg) center center no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+}
+
+/* end of about part */
+
+
+#contact{    
+  width: 100vw;
+  height: 50vh;
+  background-image: url(./media/backgrounds/map.jpg);
+  background-repeat: no-repeat;
+  background-size: 103vw;
+  background-position: center;
+  position: relative;
+
+  }
+
+#contact div {
+    width: 100%;
+    position: absolute;
+    bottom: -2.5vh;
+    height: 5vh;
+    background-color: #e7e6e3;
+    color: #2b2a29;
+}
+
+#contact span {
+    width: 20vh;
+    height: 20vh;
+    position: absolute;
+    bottom: -7.5vh;
+    left: 50vw;
+    margin-left: -5vw;
+    border-radius: 10em;
+    background-color: #e7e6e3;
+    color: #2b2a29;
+}
+
+#ContactList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 50vh;
+    background-color: #e7e6e3;
+    color: #2b2a29;
+}
+
+.ListBox {
+  width: 40%;
+  height: 40%;
+}
+
+.ListBox h1{
+  font-size: 3em;
+}
+
+.start {
+  text-align: start;
+}
+
+.end {
+  text-align: end;
+}
+
+.end .List {
+  margin-top: 3%;
+  list-style-type: none;
+  padding-left: initial;
+  font-size: 1.5em;
+}
+
+.start .List {
+  margin-top: 3%;
+  list-style-type: none;
+  padding-left: initial;
+  font-size: 4em;
+  display: flex;
+}
+
+.start .List li{
+  margin-left: 2%;
+}
+
+.games {
+  margin-top: 65vh;
+}
