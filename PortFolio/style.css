@@ -1,0 +1,19 @@
+#partesuperior {
+    width: 80vw;
+    height: 30vh;
+    margin: auto;
+    display: flex;	
+}
+#text1 {
+	width: 90%;
+    height: 90%;
+    margin: auto;
+}
+.fixfloat {
+	float: left;
+}
+#sobremi {
+	width: 80vw;
+    height: 60vh;
+    margin: auto;
+}
