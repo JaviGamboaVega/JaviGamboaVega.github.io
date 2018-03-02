@@ -1,0 +1,60 @@
+#partesuperior {
+    width: 80vw;
+    height: 30vh;
+    margin: auto;
+    display: flex;	
+}
+#text1 {
+	width: 90%;
+    height: 90%;
+    margin: auto;
+}
+.fixfloatleft {
+	float: left;
+}
+.fixfloatright{
+    float: right;
+}
+#sobremi {
+	width: 80vw;
+    height: 60vh;
+    margin: auto;
+}
+
+
+.textDrch {
+    text-align: right;
+}
+.navbar {
+    width: 80vw;
+    height: 5vh;
+    margin: auto;    
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.elresto {
+    list-style-type: none;
+    height: 100%;
+    margin: 7px;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.contactmenu {
+    list-style-type: none;
+    margin: 7px;
+    padding: 7px;
+}
+.home {
+
+}
+.howto {
+
+}
+.contact {
+
+}
